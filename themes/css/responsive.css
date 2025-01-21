@@ -1,0 +1,23 @@
+/* menu show */
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .menu-button {
+    display: block;
+  }
+  .show-menu {
+    left: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  .show-menu .scroll_text {
+    color: #333 !important;
+  }
+}
