@@ -7,11 +7,15 @@
     display: block;
   }
   .show-menu {
+    left: 0;
+  }
+  nav ul {
     padding: 60px;
     z-index: 9999;
-    left: 0;
+    left: 100%;
     position: fixed;
     width: 100%;
+    transition: 0.5s;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.95);
   }
@@ -23,6 +27,7 @@
   .show-menu li:hover {
     border-left: solid 2px #333;
   }
+
   .show-menu .scroll_text {
     color: #333 !important;
   }

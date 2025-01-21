@@ -88,8 +88,12 @@ nav {
 .nav_fixed .scroll_text {
   color: #666;
 }
+.scroll_text {
+  display: block;
+  width: 100%;
+}
 
-nav ul li a::after {
+.nav ul li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -105,6 +109,31 @@ nav ul li a::after {
 nav ul li a:hover::after {
   transform-origin: bottom left;
   transform: scale(1);
+}
+.menu-button {
+  z-index: 9999;
+}
+.bar1,
+.bar2,
+.bar3 {
+  border-radius: 2px;
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 /* content */
 /* .content .container {
